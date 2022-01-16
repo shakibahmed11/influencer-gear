@@ -1,0 +1,379 @@
+/* -----------
+    fonts
+    -----------*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    /*--------------
+     common styles 
+     --------------*/
+     body{
+          font-family: 'Poppins', sans-serif;
+          margin-left: 120px;
+          margin-right: 120px;
+          margin-top: 50px;
+          background-color: whitesmoke;
+     }
+     /*-----------------
+      navigation style
+      -------------------*/
+    nav{
+          display: flex;
+          justify-content: space-between;
+          
+    }
+    
+    nav a{
+          text-decoration: none;
+          color: black;
+          margin-right: 20px;
+          
+    }
+    nav h4{
+          margin-top: 0px;
+    }
+    /*-----------------
+     top section 
+     ---------------*/
+     .top-section{
+           display: flex;
+      
+           
+     }
+     .half-width{
+           width: 50%;
+     }
+
+     .background-image{
+           background-image: url(images/Circle\ design.svg);
+           background-repeat: no-repeat;
+           background-position: right;
+     }
+     .header{
+           margin-top: 100px; 
+     }
+     .image img:hover{
+           transform: scale(1.2);
+           transition:transform 2s ease-out;
+     }
+     
+     .link-button{
+           background-color: crimson;
+           width: 190px;
+           height: 30px;
+           text-align: center;
+           padding-top: 5px;
+           border-radius: 40px;
+           color: white;
+              
+     }
+     .link-button a{
+          text-decoration: none;
+          color: white;
+     }
+    
+     
+     .header h1{
+           font-size: 40px;
+     }
+     .image{
+          text-align: right;
+          margin-left: 180px;
+          margin-top: 30px;
+          height: 490px;
+          
+     }
+     
+     }
+     .image img{
+           width: 440px;
+           height: 414px;
+           
+     }
+     /*--------\
+      logos 
+      -------*/
+      .logos{
+            margin-top: 68px;
+            width: 1110px;
+            height: 55px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            
+      }
+      .logo-section{
+            display: flex;
+            justify-content: center;
+      }
+      .logo-margin{
+            margin-right: 50px; 
+            padding-top: 5px;
+      }
+      /* shopping section */
+      .shopping{
+          width: 1050px;
+            margin-left: 90px;
+      }
+      .section-title{
+            text-align: center;
+      }
+      .shop-item{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 20px;
+            
+            
+      }
+      .shop-bannar img{
+          width: 290px;
+      }
+    .shoping-time{
+          width: 290px;
+          background-color: white;
+          padding: 20px;
+          border-radius: 10px;
+    }
+     .filled, .fa-star-half-alt{
+           color: gold;
+     }
+     .empty{
+           color: gray;
+     }
+     .see-more {
+           text-align: right;
+           margin-top: 20px;
+           padding-right: 20px;
+           color: red;
+           
+           
+     }
+     .see-more a{
+           color: red;
+     }
+     /*----------------------
+      last section 
+      ----------------------*/
+     .last-section{
+           display: flex;
+           margin-top: 100px;
+           width: 1110px;
+           margin-left: 80px;
+     }
+     .last-section-paragraph{
+          padding-left: 90px;
+          margin-left: 70px;
+          padding-bottom: 20px;
+     }
+     .last-button{
+           color: white;
+           background-color: crimson;
+           width: 120px;
+           height: 30px;
+           text-align: center;
+           padding-top: 2px;
+           border-radius: 5px;
+     }
+     .last-button a{
+           color: white;
+     }
+     .influencer-about img{
+           width: 440px;
+      
+     }
+     /* Footer */
+     .footer-section{
+           background-color: black;
+           color: white;
+           text-align: center;
+           padding-top: 20px;
+           padding-bottom: 15px;
+           
+     }
+     footer a{
+      text-decoration: none;
+      color: white;
+     }
+     .fab{
+           margin-right: 20px;
+           font-size: 15px;
+     }
+     .big-footer{
+           font-size: 20px;
+     }
+     .small-footer{
+           font-size: 10px;
+     }
+
+
+     /* -------------------
+    Media qarys
+    --------------------- */
+    /* -----------------
+    Mobile Devices
+    ------------------- */
+   @media only screen and (max-width:688px) {
+         body{
+               width: 100%;
+               margin-left: 0%;
+               margin-left: 0%;
+         }
+         /* main heading */
+         
+         .mobile-device{
+               display: none;
+         }
+         header h4{
+            margin-top: 0;
+            padding-left: 50px;
+            
+         }
+         .mobile-device-empty{
+               padding-right: 50px;
+         }
+         /* top section */
+         .top-section{
+               flex-direction: column;
+         }
+         .header{
+               margin-top: 0%;
+         }
+         .half-width{
+               width: 100%;
+         }
+         .image{
+               margin-left: 0%;
+         }
+         .half-width h1, p{
+               padding-left: 20px;
+         }
+         .link-button{
+               margin-left: 20px;
+         }
+         /* logo section */
+         .logo-section{
+               flex-direction: row;
+               padding-left: 25px;
+         }
+         .logos{
+               height: 140px;
+         }
+         /* shopping section */
+         .shopping{
+               margin-left: 0%;
+               padding-left: 40px;
+               width: 100%;
+         }
+         .section-title{
+               text-align: left;
+               padding-left: 40px;
+         }
+         .shop-item{
+               grid-template-columns: repeat(1, 1fr);
+
+         }
+         .see-more{
+               padding-right: 85px;
+         }
+         /* last-section */
+         .last-section{
+               margin-left: 5px;
+               flex-direction: column;
+               width: 100%;
+         }
+         .last-section-paragraph{
+               margin-left: 0%;
+               padding-left: 0%;
+         }
+         .influencer-about img{
+               width: 350px;
+               padding: 25px;
+         }
+         .last-section-paragraph h1, p{
+               width: 400px;
+               padding-left: 25px;
+         }
+         .last-button{
+               margin-left: 25px;
+         }
+         .last-section-paragraph p{
+               padding-right: 5px;
+         }
+   }
+
+   /*--------------------
+    table device 
+   -----------------------*/
+   @media only screen and (min-width:689px) and (max-width:992px) {
+         body{
+               width: 100%;
+               margin-left: 0%;
+               margin-right: 0%;
+         }
+         /* main section */
+         header{
+               padding-left: 40px;
+               padding-right: 40px;
+         }
+         /* top section */
+         .top-section{
+               flex-direction: column;
+         }
+         .half-width{
+               width: 100%;
+         }
+            .top-section h1, p{
+                        margin-left: 70px;
+                        margin-right: 100px;
+            }
+            .link-button{
+                  margin-left: 70px;
+            }
+         .image{
+               text-align: center;
+               margin-left: 0%;
+         }
+         .background-image{
+               background-position: center;
+         }
+         /* logo */
+         .logos{
+               height: 100px;
+         }
+         .logo-margin{
+               padding-left: 50px;
+         }
+         /* shopping section */
+         .shopping{
+               margin-left: 40px;
+               width: 100%;
+         }
+         .shop-item{
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+         }
+         .shoping-detail p{
+               margin-left: 0%;
+         }
+         .see-more{
+               text-align: center;
+         }
+         /* last section */
+         .last-section{
+               width: 100%;
+               flex-direction: column;
+
+         }
+         .influencer-about img{
+               border-radius: 10px;
+         }
+         .influencer-about{
+               padding-left: 50px;
+         }
+         .last-section-paragraph{
+               padding-left: 0%;
+               margin-left: 0%;
+         }
+         .last-section-paragraph p{
+               margin-left: 0%;
+         }
+      
+   }
